@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내 웹페이지</title>
+  
+</head>
+<body>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_portfolio.css">
+  
+  <div class="container">
+    <div class="left">
+      <h1> 안녕하세요!</h1>
+      <p>이곳은 왼쪽 사이드입니다. 간단한 자기소개나 메뉴를 넣을 수 있어요.</p>
+      <ul>
+        <li><a href="#intro">소개</a></li>
+        <li><a href="#info">기본 정보</a></li>
+        <li><a href="#skills">기술 스택</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#activities">기타 활동</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <section id="intro" class="intro">
+                <h1> 조상준 | 프론트엔드 개발자</h1>
+                <img src="loopy.png" alt="조상준 프로필 사진" class="profile-photo">
+                <p>안녕하세요! 꾸준히 성장하는 개발자 <strong>조상준</strong>입니다. 사용자 경험을 중심으로 UI/UX 설계를 중요하게 생각하며, React와 TypeScript 기반의 웹 애플리케이션 개발을 주력으로 하고 있습니다. 항상 효율적이고 유지보수 가능한 코드를 지향합니다.</p>
+            </section>
+
+            <section id="info" class="info">
+                <h2> 기본 정보</h2>
+                <ul>
+                    <li>이름: 조상준 (Jo Sangjun)</li>
+                    <li>이메일: <a href="mailto:sangjun.dev@example.com">sangjun.dev@example.com</a></li>
+                    <li>GitHub: <a href="https://github.com/sangjun-dev">github.com/sangjun-dev</a></li>
+                    <li>블로그: <a href="https://velog.io/@sangjun">velog.io/@sangjun</a></li>
+                    <li>거주지: 서울, 대한민국</li>
+                    <li>관심 기술: React, Next.js, TypeScript, UI 성능 최적화</li>
+                </ul>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2> 기술 스택</h2>
+                <div class="skill-category">
+                    <h3>프론트엔드</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript (ES6+)</li>
+                        <li>React, Next.js, TypeScript</li>
+                        <li>Tailwind CSS, Styled-components</li>
+                        <li>Zustand, Redux Toolkit</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>백엔드 및 기타</h3>
+                    <ul>
+                        <li>Node.js, Express</li>
+                        <li>Firebase, Supabase</li>
+                        <li>Git / GitHub, Vercel, Netlify</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2> 프로젝트</h2>
+                <div class="project-card">
+                    <h3>🔹 Portfolio Web (개인 포트폴리오)</h3>
+                    <ul>
+                        <li>React와 Tailwind CSS를 사용한 반응형 포트폴리오</li>
+                        <li>Vercel로 배포, GitHub 연동</li>
+                        <li><a href="https://github.com/sangjun-dev/portfolio">🔗 GitHub 링크</a></li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>🔹 StudyNote (스터디 관리 앱)</h3>
+                    <ul>
+                        <li>Next.js 기반, Markdown 포스트 기능</li>
+                        <li>사용자 인증과 실시간 데이터 연동 (Firebase 사용)</li>
+                        <li><a href="https://github.com/sangjun-dev/studynote">🔗 GitHub 링크</a></li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>🔹 WeatherApp</h3>
+                    <ul>
+                        <li>OpenWeather API 사용</li>
+                        <li>React + TypeScript + Zustand 상태 관리 적용</li>
+                        <li><a href="https://github.com/sangjun-dev/weather-app">🔗 GitHub 링크</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="activities" class="activities">
+                <h2> 기타 활동</h2>
+                <ul>
+                    <li> 기술 블로그 운영 중 <a href="https://velog.io/@sangjun">velog.io/@sangjun</a></li>
+                    <li> 사이드 프로젝트 팀 리딩 경험</li>
+                    <li> TIL 작성 100일 이상 기록</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2> 연락처</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required placeholder="이름을 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required placeholder="이메일을 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" required placeholder="메시지를 입력해주세요" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">메시지 보내기</button>
+                </form>
+                <div id="formStatus" class="form-status" style="display: none;"></div>
+                <div class="social-links">
+                    <h3>소셜 미디어</h3>
+                    <ul>
+                        <li>GitHub: <a href="https://github.com/sangjun-dev">github.com/sangjun-dev</a></li>
+                        <li>LinkedIn: <a href="https://linkedin.com/in/sangjun-dev">linkedin.com/in/sangjun-dev</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>
+                <blockquote>
+                    "코드는 나의 언어이며, 사용자 경험은 나의 철학입니다."<br>
+                    — 조상준
+                </blockquote>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+
